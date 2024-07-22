@@ -1,0 +1,76 @@
+.item-card {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 300px;
+  /* Add position relative */
+  /* Add top to create space below the Topper component */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.item-images {
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+/* Responsive Styles */
+
+/* For tablet screens */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-images {
+    width: 300px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-images {
+    width: 100%;
+  }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .item-images {
+    width: 100%;
+  }
+}

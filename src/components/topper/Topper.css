@@ -1,0 +1,80 @@
+.topperSpace {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1000;
+}
+
+.topper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topper img {
+  width: 100px;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  margin-left: 200px;
+  gap: 10px;
+}
+
+.top-end {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 30px;
+  transition: background-color 1s;
+}
+
+.profile:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid #d4d4d4;
+}
+
+@media (max-width: 768px) {
+  .topper {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .middle {
+    margin: 10px 0;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .top-end {
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .profile {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
